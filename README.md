@@ -1,7 +1,7 @@
 # Via Oberta - Títol de Família Nombrosa
 Document d’integració del servei.
 
-Podreu trobar els XSD's del servei en aquest repositori sota el directori [/schema](https://github.com/ConsorciAOC/VO-DCOC/tree/main/schema).
+Podreu trobar els XSD's del servei en aquest repositori sota el directori [/schema](https://github.com/ConsorciAOC/VO-TFN/tree/main/TFN-schemes).
 
 ## Control del document
 

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<respostaConsultaVigencia xmlns="http://www.aoc.cat/tfn">
+	<peticioConsultaVigencia>
+		<identificadorTitular>
+			<tipusDocumentacio>NIF</tipusDocumentacio>
+			<documentacio>String</documentacio>
+		</identificadorTitular>
+		<numeroTitol>String</numeroTitol>
+		<categoria>String</categoria>
+		<data>String</data>
+	</peticioConsultaVigencia>
+	<resposta>
+		<indicadorVigencia>String</indicadorVigencia>
+		<codiAvis>String</codiAvis>
+	</resposta>
+	<resultat>
+		<codiResultat>String</codiResultat>
+		<descripcio>String</descripcio>
+	</resultat>
+</respostaConsultaVigencia>

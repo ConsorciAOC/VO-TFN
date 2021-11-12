@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<peticioConsultaVigencia xmlns="http://www.aoc.cat/tfn">
+	<identificadorTitular>
+		<tipusDocumentacio>NIF</tipusDocumentacio>
+		<documentacio>String</documentacio>
+	</identificadorTitular>
+	<numeroTitol>String</numeroTitol>
+	<categoria>String</categoria>
+	<data>String</data>
+</peticioConsultaVigencia>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<respostaDadesCompletesDiscapacitats xmlns="http://www.aoc.cat/tfn">
+	<peticioDadesCompletesDiscapacitats>
+		<identificadorTitular>
+			<tipusDocumentacio>NIF</tipusDocumentacio>
+			<documentacio>String</documentacio>
+		</identificadorTitular>
+	</peticioDadesCompletesDiscapacitats>
+	<resposta>
+		<numeroTitol>String</numeroTitol>
+		<nom>String</nom>
+		<primerCognom>String</primerCognom>
+		<segonCognom>String</segonCognom>
+		<numeroFills>0</numeroFills>
+		<categoria>String</categoria>
+		<estat>String</estat>
+		<tipusVia>String</tipusVia>
+		<nomVia>String</nomVia>
+		<bloc>String</bloc>
+		<numero>String</numero>
+		<pis>String</pis>
+		<escala>String</escala>
+		<porta>String</porta>
+		<codiPostal>String</codiPostal>
+		<localitat>String</localitat>
+		<provincia>String</provincia>
+		<dataCaducitat>String</dataCaducitat>
+		<tipus>String</tipus>
+		<relacio>String</relacio>
+		<numDiscapacitats>0</numDiscapacitats>
+	</resposta>
+	<resultat>
+		<codiResultat>String</codiResultat>
+		<descripcio>String</descripcio>
+	</resultat>
+</respostaDadesCompletesDiscapacitats>

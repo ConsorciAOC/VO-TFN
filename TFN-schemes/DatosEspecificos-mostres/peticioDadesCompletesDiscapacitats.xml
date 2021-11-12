@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<peticioDadesCompletesDiscapacitats xmlns="http://www.aoc.cat/tfn">
+	<identificadorTitular>
+		<tipusDocumentacio>NIF</tipusDocumentacio>
+		<documentacio>String</documentacio>
+	</identificadorTitular>
+</peticioDadesCompletesDiscapacitats>
