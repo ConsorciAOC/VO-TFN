@@ -44,8 +44,8 @@ Podreu trobar els XSD's del servei en aquest repositori sota el directori [/sche
    		* [3.3.1 Petició – dades específiques](#3.3.1)
    		* [3.3.2 Resposta – dades específiques](#3.3.2)
    * [3.5 Consulta de dades d'un títol i nombre de discapacitats per lots (TFN_DADESCOMPLETES_DIS_MASSIU))](#3.5)
-   		* [3.5.1 Petició - dades genèriques](#3.3.1)
-   		* [3.5.2 Resposta](#3.3.2)		
+   		* [3.5.1 Petició - dades genèriques](#3.5.1)
+   		* [3.5.2 Resposta](#3.5.2)		
 - [4. Joc de proves](#4)
 
 
@@ -58,9 +58,9 @@ Aquest document detalla la missatgeria associada al servei de Títol de Família
 
 ## 2 Transmissions de dades disponibles <a name="2"></a>
 
-Les dades disponibles a través del servei són les que es presenten a continuaci
+Les dades disponibles a través del servei són les que es presenten a continuació
 
-- **EMISSOR**:Secretaria de Polítiques Familiars i Drets de Ciutadania
+- **EMISSOR**: Secretaria de Polítiques Familiars i Drets de Ciutadania
 
 | **PRODUCTE** | **MODALITAT** | **DESCRIPCIO** |
 | --- | --- | --- |
@@ -142,8 +142,7 @@ més recent.
 |/respostaDadesCompletes/resposta | Bloc de dades amb les dades del títol. Vegeu l’apartat 3.2.2.1 per més detalls|
 |/respostaDadesCompletes/resultat/codiResultat|<ul><li>0:<i>Operació realitzada correctament.</i></li><li>0:<i>Error realitzant la consulta.</i></li><li>2:<i>No s'ha trobat títol amb les dades especificades.</i></li></ul>|
 |/respostaDadesCompletes/resultat/descripcio |Descripció del resultat.|
-|/peticioDadesCompletes/dadesTitular/primerCognom|Primer cognom (s’obvien majúscules / minúscules i accents).|
-|/peticioDadesCompletes/dadesTitular/dataNaixement|Data de naixement del titular (DDMMAAAA).|
+
 
 <p align="center">
 <img align="center" src="img/respostaDadesCompletes.png" />
@@ -161,6 +160,7 @@ més recent.
 |//resposta/primerCognom |Primer cognom del titular|
 |//resposta/segonCognom |Segon cognom del titular.|
 |//resposta/numeroFills |Número de fills.|
+|//resposta/categoria |Categoria del títol.|
 |//resposta/estat|Estat del títol (vigent, no vigent, en tràmit, transitori).|
 |//resposta/tipusVia|Tipus de via.|
 |////resposta/nomVia|Nom de la via|
@@ -181,7 +181,7 @@ més recent.
 ## Consulta de dades d’un títol i nombre de discapacitats(TFN_DADESCOMPLETES_DIS) <a name="3.3"></a>
 La consulta de dades d’un títol proporciona informació del títol incloent els camps adreça a partir de l’identificador del titular o d’algun dels seus fills.
 
-<br/><br/>Si el títol consta amb més d’un tram de vigència es retornen les dades associades al tram de vigència
+<br/>Si el títol consta amb més d’un tram de vigència es retornen les dades associades al tram de vigència
 més recent.
 
 
@@ -196,7 +196,7 @@ més recent.
 |/peticioDadesCompletesDiscapacitats/identificadorTitular/tipusDocumentacio|Tipus de document identificador: <ul><li>NIF</li><li>NIE</li><li>Passaport</li></ul>|
 |/peticioDadesCompletesDiscapacitats/identificadorTitular/documentacio| Document identificador|
 
-### 3.3.2 Resposta – dades específiques <a name="3.3.3"></a>
+### 3.3.2 Resposta – dades específiques <a name="3.3.2"></a>
 <p align="center">
 <img align="center" src="img/respostaDadesCompletesDiscapacitats.png" />
 </p>
@@ -205,11 +205,12 @@ més recent.
 | --- | --- |
 |/respostaDadesCompletesDiscapacitats/peticioDadesCompletesDiscapacitats|Bloc de dades corresponent a la peticióque genera la resposta.|
 |/respostaDadesCompletesDiscapacitats/resposta| a Bloc de dades amb les dades del títol. Vegeu l’apartat 3.2.2.1 per més detalls.|
-|/respostaDadesCompletesDiscapacitats/resultat/codiResultat|<ul><li>0:<i>Operació realitzada correctament.</i></li><li>0:<i>Error realitzant la consulta.</i></li><li>2:<i>No s'ha trobat títol amb les dades especificades.</i></li></ul>|
+|/respostaDadesCompletesDiscapacitats/resultat/codiResultat|<ul><li>0: <i>Operació realitzada correctament.</i></li><li>1: <i>Error realitzant la consulta.</i></li><li>2: <i>No s'ha trobat títol amb les dades especificades.</i></li></ul>|
 |/respostaDadesCompletesDiscapacitats/resultat/descripcio|Descripció del resultat.|
 
 ### 3.4 Consulta de dades d’un títol per lots (TFN_DADESCOMPLETES_MASSIU) <a name="3.4"></a>
 Consulta de dades de títols per lots a partir de documents identificadors.
+
 <br/>Per cada identificador retorna un fitxer amb les dades del títol corresponent al titular del tram de
 vigència més recent.
 
@@ -225,9 +226,9 @@ vigència més recent.
 
 | *Element*| *Descripció* | 
 | --- | --- |
-|/respostaDadesCompletesMassiu/resposta/efectius|Si la petició es processa correctament, número de titulars localitzats pels quals es retornen dades|
+|/respostaDadesCompletesMassiu/resposta/efectius|Si la petició es processa correctament, número de titulars localitzats pels quals es retornen dades.|
 |/respostaDadesCompletesMassiu/resposta/resultat| Fitxer ZIP amb el resultat codificat en base 64.|
-|/respostaDadesCompletesMassiu/resultat/codiResultat |<ul><li>0:<i>Operació realitzada correctament.</i></li><li>0:<i>Error realitzant la consulta.</i></li></ul>|
+|/respostaDadesCompletesMassiu/resultat/codiResultat |<ul><li>0: <i>Operació realitzada correctament.</i></li><li>1: <i>Error realitzant la consulta.</i></li></ul>|
 |/respostaDadesCompletesMassiu/resultat/descripcio|Descripció del resultat.|
 <p align="center">
 <img align="center" src="img/respostaDadesCompletesMassiu.png" />
@@ -256,6 +257,13 @@ El fitxer de resposta contindrà les respostes separades per un salt de línia a
 C que el membre identificat en el fitxer d'entrada per aquell títol és el co-titular. No obstant, en el cas
 de TFN sempre s'informarà T ja que no hi ha co-titulars en les famílies monoparentals.
 
+## 3.5 Consulta de dades d’un títol i nombre de discapacitats per lots (TFN_DADESCOMPLETES_DIS_MASSIU) <a name="3.5"></a>
+
+Consulta de dades de títols i número de discapacitats per lots a partir de documents identificadors.
+
+<br/>Per cada identificador retorna un fitxer amb les dades del títol corresponent al titular del tram de
+vigència més recent.
+
 ### 3.5.1 Petició – dades genèriques <a name="3.5.1"></a>
 | *Element*| *Descripció* | 
 | --- | --- |
@@ -263,11 +271,13 @@ de TFN sempre s'informarà T ja que no hi ha co-titulars en les famílies monopa
 
 ### 3.5.2 Resposta<a name="3.5.2"></a>
 
+#### 3.5.2.1 Dades específiques <a name="3.5.2.1"></a>
+
 | *Element*| *Descripció* | 
 | --- | --- |
 |/respostaDadesCompletesDiscapacitatsMassiu/resposta/efectius|Si la petició es processa correctament, número de línies del fitxer resultat.|
 |/respostaDadesCompletesDiscapacitatsMassiu/resposta/resultat|Fitxer ZIP amb el resultat codificat en base 64.|
-|/respostaDadesCompletesDiscapacitatsMassiu/resultat/codiResultat|<ul><li>0:<i>Operació realitzada correctament.</i></li><li>0:<i>Error realitzant la consulta.</i></li></ul>|
+|/respostaDadesCompletesDiscapacitatsMassiu/resultat/codiResultat|<ul><li>0: <i>Operació realitzada correctament.</i></li><li>1: <i>Error realitzant la consulta.</i></li></ul>|
 |/respostaDadesCompletesDiscapacitatsMassiu/resultat/descripcio|Descripció del resultat|
 
 <p align="center">
@@ -297,7 +307,7 @@ amb el següent format
 |Número de persones amb discapacitat |2|
 |Tipus persona (1 posició, amb valor T o C)|2|
 
-El tipus de persona T indica que el membre identificat en el fitxer d'entrada per aquell títol és el titular i
+>El tipus de persona T indica que el membre identificat en el fitxer d'entrada per aquell títol és el titular i
 C que el membre identificat en el fitxer d'entrada per aquell títol és el co-titular. No obstant, en el cas
 de TFN sempre s'informarà T ja que no hi ha co-titulars en les famílies monoparentals.
 
