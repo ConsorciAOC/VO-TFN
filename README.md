@@ -66,7 +66,7 @@ Les dades disponibles a través del servei són les que es presenten a continuac
 | --- | --- | --- |
 | **TFN**| [TFN_VIGENCIA](#3.1) | Consulta de vigència en una data.|
 | **TFN**| [TFN_DADESCOMPLETES](#3.2) | Consulta de dades completes del títol.  |
-| **TFN**| [TFN_DADESCOMPLETES _DIS](#3.3) | Consulta de dades completes del títol i nombre de discapacitats de la família.|
+| **TFN**| [TFN_DADESCOMPLETES_DIS](#3.3) | Consulta de dades completes del títol i nombre de discapacitats de la família.|
 | **TFN**| [TFN_DADESCOMPLETES_MASSIU](#3.4) | Consulta de dades completes del títol (lot).|
 | **TFN**| [TFN_DADESCOMPLETES_DIS_MASSIU](#3.5) | Consulta de dades completes del títol i nombre de discapacitats de la família (lot).
 |
