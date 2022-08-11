@@ -53,7 +53,11 @@ Podreu trobar els XSD's del servei en aquest repositori sota el directori [/sche
 Aquest document detalla la missatgeria associada al servei de Títol de Família Nombrosa (TFN en endavant).
 
 <br/>Per poder realitzar la integració cal conèixer prèviament la següent documentació: 
-- Document d’Especificació de missatgeria pel consum de productes de la plataforma PCI del Consorci AOC.
+
+- [Document de Missatgeria Genèrica de la PCI del Consorci AOC.][PCI]
+
+[PCI]:https://github.com/ConsorciAOC/PCI
+
 
 
 ## 2 Transmissions de dades disponibles <a name="2"></a>
@@ -313,5 +317,9 @@ de TFN sempre s'informarà T ja que no hi ha co-titulars en les famílies monopa
 
 ## 4 Joc de proves <a name="4"></a>
 
-Degut a que l'emissor final no proporciona un joc de proves estable us recomanem que ens el
-sol·liciteu en el moment de fer la integració.
+L&#39;emissor final publica els següent [joc de proves a l&#39;entorn de pre-producció][proves] 
+
+[proves]: http://transversals.ctti.intranet.gencat.cat/sol-pica-iop-gene/
+![image](https://user-images.githubusercontent.com/32306731/137281698-9dfc2044-94f7-487f-a7d6-9a4e0707feb3.png) En cas de tindre problemes per accedir als jocs de proves, si us plau, obre un tiquet a través del [formulari][form]
+
+[form]:https://www.aoc.cat/portal-suport/peticio-integradors/idservei/integracio/
