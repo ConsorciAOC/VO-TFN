@@ -112,7 +112,7 @@ De l’schema associat a la resposta especifica, el servei informa les dades que
 | *Element*| *Descripció* | 
 | --- | --- |
 |/respostaConsultaVigencia/peticioConsultaVigencia |Bloc de dades corresponent a la petició que genera la resposta.|
-|/respostaConsultaVigencia/resposta/indicadorVigencia|Indicador de vigència del títol:<ul><li>Vigent: <i>Si</i></li><li>No vigent <i> No</i></li><li>Transitori: <i>Transitori</i></li></ul> 
+|/respostaConsultaVigencia/resposta/indicadorVigencia|Indicador de vigència del títol:<ul><li>Vigent: <i>Si</i></li><li>No vigent <i>NO_VIGENT</i></li><li>Transitori: <i>TRANSITORI</i></li><li>No trobat: <i>NO_TROBAT</i></li></ul> 
 |/respostaConsultaVigencia/resposta/codiAvis|Si el títol localitzat no és vigent però està en tràmit s’informa aquest element indicant la data de sol·licitud de tramitació del títol.|
 |/respostaConsultaVigencia/resultat/codiResultat |<ul><li>0:<i>Operació realitzada correctament.</i></li><li>0:<i>Error realitzant la consulta.</i></li><li>2:<i>No s'ha trobat títol amb les dades especificades.</i></li></ul> |
 |/respostaConsultaVigencia/resultat/descripcio|Descripció del resultat|
