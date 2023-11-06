@@ -125,7 +125,7 @@ l’identificador del titular o d’algun dels seus fills.
 més recent.
 
 
-### 3.2.1 Petició – dades específique <a name="3.2.1"></a>
+### 3.2.1 Petició – dades específiques <a name="3.2.1"></a>
 <p align="center">
 <img align="center" src="img/peticioDadesCompletes.png" />
 </p>
